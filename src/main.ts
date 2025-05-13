@@ -13,7 +13,7 @@ formElement.onsubmit = async (e) => {
   const result = await encodeUrl({ url, password });
 
   const newLink = new URL(window.location.href);
-  newLink.pathname = "d";
+  newLink.pathname = import.meta.env.BASE_URL + "d";
   newLink.searchParams.append("c", result.encoded);
 
   const headerElement = document.createElement("h3");
