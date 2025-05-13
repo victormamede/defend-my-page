@@ -23,7 +23,7 @@ jobs:
         run: corepack enable
 
       - name: Install dependencies
-        run: pnpm run install
+        run: pnpm install
 
       - name: Build project
         run: pnpm run build
